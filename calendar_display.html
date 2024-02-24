@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Display</title>
+  <style>
+    /* Add your CSS styles here */
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .event {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calendar Display</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- PHP code to generate calendar cells -->
+      <?php include 'generate_calendar.php'; ?>
+    </tbody>
+  </table>
+</body>
+</html>
